@@ -1,0 +1,11 @@
+[Unit]
+Description=Check WiFi network status
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/pi/nwk_status.sh
+
+[Install]
+WantedBy=multi-user.target
+
