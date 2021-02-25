@@ -29,8 +29,15 @@ Switch the raspberry pi WiFi between AP and STA mode
 
 ### Usage
 
-If the pi is not associate to a network it will start and AP with ssid RpiAP.
-You can edit the hostapd.conf as per your needs.
+If the pi is not associate to a network it will start and AP with ssid RpiAP. Ensure you have ssh enabled on pi.
+ssh into the pi
+
+> ssh pi@192.168.4.1
+
+then to connect to an AP
+
+> ~/stop_ap.sh '"YOURSSID"' '"PASSWORD"'
+> You can edit the hostapd.conf as per your needs.
 
 ### References
 
