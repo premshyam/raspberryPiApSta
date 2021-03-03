@@ -12,8 +12,8 @@ Switch the raspberry pi WiFi between AP and STA mode
 
 2. install hostapd and dnsmasq packages with the below commands.
    > sudo apt install hostapd dnsmasq
-3. disable wpa_supplicant.service hostapd.service and dnsmasq.service from running on boot.
-   > sudo systemctl disable wpa_supplicant.service hostapd.service dnsmasq.service
+3. disable hostapd.service and dnsmasq.service from running on boot.
+   > sudo systemctl disable hostapd.service dnsmasq.service
 4. copy the files in conf directory to the respective location.
 
    > sudo cp /path/to/repo/conf/dnsmasq.conf /etc/dnsmasq.conf
